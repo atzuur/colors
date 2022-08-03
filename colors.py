@@ -92,9 +92,9 @@ class RGB(tuple):
         return 3
 
     def validate(self):
-        return (self.R >= 0 and self.R < 255 and
-                self.G >= 0 and self.G < 255 and
-                self.B >= 0 and self.B < 255)
+        return (self.R >= 0 and self.R <= 255 and
+                self.G >= 0 and self.G <= 255 and
+                self.B >= 0 and self.B <= 255)
 
 
 def printp(text, preset: str, printend: str = '\n', **kwargs):
