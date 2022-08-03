@@ -82,10 +82,6 @@ class RGB(tuple):
         if not self.validate():
             raise ValueError('RGB values must be between 0 and 255')
 
-        self.R = R
-        self.G = G
-        self.B = B
-
     def __str__(self):
         return f'({self.R}, {self.G}, {self.B})'
 
